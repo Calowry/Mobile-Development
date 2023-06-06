@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
-        android:id="@+id/home"
+        android:id="@+id/navigation_home"
         android:icon="@drawable/ic_baseline_home"
         android:title="@string/text_home"/>
 
     <item
-        android:id="@+id/chart"
+        android:id="@+id/navigation_chart"
         android:icon="@drawable/ic_baseline_bar_chart"
         android:title="@string/chart"/>
 
@@ -15,11 +15,11 @@
         android:title=""/>
 
     <item
-        android:id="@+id/meal"
+        android:id="@+id/navigation_meal"
         android:icon="@drawable/ic_baseline_set_meal"
         android:title="@string/meal"/>
     <item
-        android:id="@+id/person"
+        android:id="@+id/navigation_profile"
         android:icon="@drawable/ic_baseline_profile"
         android:title="@string/profile"/>
 </menu>
