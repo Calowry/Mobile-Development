@@ -1,11 +1,11 @@
-package com.project.calowry_app
+package com.project.calowry_app.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.setupWithNavController
 import com.google.android.material.bottomnavigation.BottomNavigationView
+import com.project.calowry_app.R
 import com.project.calowry_app.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {

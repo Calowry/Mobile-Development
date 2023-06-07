@@ -7,9 +7,9 @@ import android.os.Looper
 import android.widget.ImageView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.app.AppCompatDelegate
-import com.project.calowry_app.MainActivity
 import com.project.calowry_app.R
 import com.project.calowry_app.databinding.ActivitySplashBinding
+import com.project.calowry_app.ui.welcome.WelcomeActivity
 
 class SplashActivity : AppCompatActivity() {
 
@@ -21,6 +21,7 @@ class SplashActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         _binding = ActivitySplashBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
 
         initUI()
     }
@@ -30,7 +31,7 @@ class SplashActivity : AppCompatActivity() {
             val imageLogo = findViewById<ImageView>(R.id.calowry_logo)
             imageLogo.alpha = 1f
             imageLogo.animate().setDuration(1000).alpha(0f).withEndAction {
-                val intentSplash = Intent(this, MainActivity::class.java)
+                val intentSplash = Intent(this, WelcomeActivity::class.java)
                 startActivity(intentSplash)
                 overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out)
                 finish()

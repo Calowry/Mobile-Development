@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.login.LoginActivity">
+
+    <TextView
+        android:id="@+id/register_message"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:fontFamily="@font/medium"
+        android:text="@string/register_message"
+        android:textColor="?attr/colorPrimary"
+        android:textSize="38sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvNameTittle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:fontFamily="@font/regular"
+        android:text="@string/name_text"
+        android:textColor="?attr/colorPrimary"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/NameEditText"
+        app:layout_constraintStart_toStartOf="@+id/NameEditText" />
+
+    <com.project.calowry_app.ui.customview.DefaultEditText
+        android:id="@+id/NameEditText"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:background="@drawable/bg_edit_text"
+        android:fontFamily="@font/regular"
+        android:hint="@string/name_placeholder"
+        android:inputType="textEmailAddress"
+        android:paddingHorizontal="18dp"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.45" />
+
+    <TextView
+        android:id="@+id/tvEmailTittle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:fontFamily="@font/regular"
+        android:text="@string/email_text"
+        android:textColor="?attr/colorPrimary"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/EmailEditText"
+        app:layout_constraintStart_toStartOf="@+id/EmailEditText" />
+
+    <com.project.calowry_app.ui.customview.EmailEditText
+        android:id="@+id/EmailEditText"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:background="@drawable/bg_edit_text"
+        android:fontFamily="@font/regular"
+        android:hint="@string/email_placeholder"
+        android:inputType="textEmailAddress"
+        android:paddingHorizontal="18dp"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.575" />
+
+    <TextView
+        android:id="@+id/tvPasswordTittle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:fontFamily="@font/regular"
+        android:text="@string/password_text"
+        android:textColor="?attr/colorPrimary"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/PasswordEditText"
+        app:layout_constraintStart_toStartOf="@+id/PasswordEditText" />
+
+    <com.project.calowry_app.ui.customview.PasswordEditText
+        android:id="@+id/PasswordEditText"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:background="@drawable/bg_edit_text"
+        android:fontFamily="@font/regular"
+        android:hint="@string/password_placeholder"
+        android:inputType="textPassword"
+        android:paddingHorizontal="18dp"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.7" />
+
+    <Button
+        android:id="@+id/register_btn"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:background="@drawable/bg_button_blue"
+        android:fontFamily="@font/bold"
+        android:text="@string/register_text"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.85" />
+
+    <LinearLayout
+        android:id="@+id/layout_text_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/register_btn">
+
+        <TextView
+            android:id="@+id/already_have_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/bold"
+            android:text="@string/already_have_account" />
+
+        <TextView
+            android:id="@+id/login_here"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:fontFamily="@font/bold"
+            android:text="@string/login_here"
+            android:textColor="?attr/colorPrimary" />
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

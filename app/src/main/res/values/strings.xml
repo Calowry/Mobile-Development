@@ -10,4 +10,24 @@
     <string name="meal_fragment">This is meal fragment</string>
     <string name="profile_fragment">This is profile fragment</string>
     <string name="welcome_message">Welcome to Calowry!!</string>
+    <string name="choosing_message">Calowry, your personal meal tracker</string>
+    <string name="login_text">Login</string>
+    <string name="register_text">Register</string>
+    <string name="login_message">Please fill your credentials below to access your account.</string>
+    <string name="register_message">Please fill out the registration form below to create your account.</string>
+    <string name="email_text">Email</string>
+    <string name="password_text">Password</string>
+    <string name="name_text">Name</string>
+    <string name="not_have_account">Doesn’t have account?</string>
+    <string name="already_have_account">Already have account?</string>
+    <string name="register_here">Please register here</string>
+    <string name="login_here">Login here</string>
+    <string name="email_placeholder">youremail@google.com</string>
+    <string name="password_placeholder">password</string>
+    <string name="name_placeholder">your name</string>
+    <string name="not_filled">Please insert your data</string>
+    <string name="email_is_empty">Please insert your email</string>
+    <string name="email_is_invalid">The Email is invalid</string>
+    <string name="password_is_empty">Please insert your password</string>
+    <string name="password_is_invalid">Password must more than 8 character</string>
 </resources>
