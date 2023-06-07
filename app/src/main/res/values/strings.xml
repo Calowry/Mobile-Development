@@ -9,4 +9,5 @@
     <string name="home_fragment">This is home fragment</string>
     <string name="meal_fragment">This is meal fragment</string>
     <string name="profile_fragment">This is profile fragment</string>
+    <string name="welcome_message">Welcome to Calowry!!</string>
 </resources>
