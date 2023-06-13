@@ -3,17 +3,233 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
+
     <TextView
-        android:id="@+id/text_home"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:textAlignment="center"
-        android:textSize="20sp"
-        android:text="@string/home_fragment"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:id="@+id/hello_name"
+        android:layout_width="295dp"
+        android:layout_height="31dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:gravity="top"
+        android:text="@string/hello_name"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="525"
+        android:textColor="@color/prime_blue"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/circularProgressIndicator"
+        app:layout_constraintEnd_toEndOf="@+id/circularProgressIndicator"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="@+id/circularProgressIndicator"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.623"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="of 2000 kcal"
+        android:textColor="@color/prime_blue"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/circularProgressIndicator"
+        app:layout_constraintEnd_toEndOf="@+id/circularProgressIndicator"
+        app:layout_constraintStart_toStartOf="@+id/circularProgressIndicator"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <com.google.android.material.progressindicator.CircularProgressIndicator
+        android:id="@+id/circularProgressIndicator"
+        android:layout_width="261dp"
+        android:layout_height="298dp"
+        android:layout_marginTop="76dp"
+        android:progress="25"
+        app:indicatorColor="@color/prime_blue"
+        app:indicatorSize="200dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:trackColor="@color/light_grey"
+        app:trackCornerRadius="8dp"
+        app:trackThickness="20dp" />
+
+    <TextView
+        android:id="@+id/nutrient1"
+        android:layout_width="295dp"
+        android:layout_height="31dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="304dp"
+        android:gravity="top"
+        android:text="@string/protein_consumed"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/reached1"
+        android:layout_width="92dp"
+        android:layout_height="24dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="336dp"
+        android:gravity="top"
+        android:text="10 of 500mg"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.progressindicator.LinearProgressIndicator
+        android:id="@+id/linearProgressIndicator1"
+        android:layout_width="100dp"
+        android:layout_height="83dp"
+        android:layout_marginTop="8dp"
+        android:progress="30"
+        app:indicatorColor="@color/light_blue"
+        app:layout_constraintEnd_toEndOf="@+id/nutrient1"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/reached1"
+        app:layout_constraintTop_toBottomOf="@+id/nutrient1"
+        app:trackColor="@color/light_grey"
+        app:trackCornerRadius="8dp"
+        app:trackThickness="8dp" />
+
+    <TextView
+        android:id="@+id/nutrient2"
+        android:layout_width="295dp"
+        android:layout_height="31dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="380dp"
+        android:gravity="top"
+        android:text="@string/sugar_consumed"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.progressindicator.LinearProgressIndicator
+        android:id="@+id/linearProgressIndicator2"
+        android:layout_width="100dp"
+        android:layout_height="83dp"
+        android:layout_marginTop="84dp"
+        android:progress="30"
+        app:indicatorColor="@color/orange"
+        app:layout_constraintEnd_toEndOf="@+id/nutrient1"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/reached1"
+        app:layout_constraintTop_toBottomOf="@+id/nutrient1"
+        app:trackColor="@color/light_grey"
+        app:trackCornerRadius="8dp"
+        app:trackThickness="8dp" />
+
+    <TextView
+        android:id="@+id/reached2"
+        android:layout_width="92dp"
+        android:layout_height="24dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="412dp"
+        android:gravity="top"
+        android:text="10 of 500mg"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/nutrient3"
+        android:layout_width="295dp"
+        android:layout_height="31dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="464dp"
+        android:gravity="top"
+        android:text="@string/fat_consumed"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.progressindicator.LinearProgressIndicator
+        android:id="@+id/linearProgressIndicator16"
+        android:layout_width="100dp"
+        android:layout_height="83dp"
+        android:layout_marginTop="168dp"
+        android:progress="30"
+        app:indicatorColor="@color/pink"
+        app:layout_constraintEnd_toEndOf="@+id/nutrient1"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/reached1"
+        app:layout_constraintTop_toBottomOf="@+id/nutrient1"
+        app:trackColor="@color/light_grey"
+        app:trackCornerRadius="8dp"
+        app:trackThickness="8dp" />
+
+    <TextView
+        android:id="@+id/reached3"
+        android:layout_width="92dp"
+        android:layout_height="24dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="496dp"
+        android:gravity="top"
+        android:text="10 of 500mg"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/nutrient4"
+        android:layout_width="295dp"
+        android:layout_height="31dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="544dp"
+        android:gravity="top"
+        android:text="@string/carbs_consumed"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.progressindicator.LinearProgressIndicator
+        android:id="@+id/linearProgressIndicator23"
+        android:layout_width="100dp"
+        android:layout_height="83dp"
+        android:layout_marginTop="248dp"
+        android:progress="30"
+        app:indicatorColor="@color/yellow"
+        app:layout_constraintEnd_toEndOf="@+id/nutrient1"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/reached1"
+        app:layout_constraintTop_toBottomOf="@+id/nutrient1"
+        app:trackColor="@color/light_grey"
+        app:trackCornerRadius="8dp"
+        app:trackThickness="8dp" />
+
+    <TextView
+        android:id="@+id/reached4"
+        android:layout_width="92dp"
+        android:layout_height="24dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="576dp"
+        android:gravity="top"
+        android:text="10 of 500mg"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
