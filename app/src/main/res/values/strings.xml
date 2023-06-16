@@ -64,4 +64,7 @@
     <string name="message_logout_confirm">Are you sure want logout ?</string>
     <string name="action_yes">Yes</string>
     <string name="action_cancel">No</string>
+    <string name="logout">Logout</string>
+    <string name="user_name">User Name</string>
+    <string name="user_email">User Email</string>
 </resources>

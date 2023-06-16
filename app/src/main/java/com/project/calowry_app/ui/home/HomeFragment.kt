@@ -73,7 +73,7 @@ class HomeFragment : Fragment() {
 
             currentCaloriesTextView.text = currentCalories.toString()
 
-            val caloriesProgress = (currentCalories.toFloat() / targetCalories.toFloat()) * 100
+            val caloriesProgress = (currentCalories / targetCalories.toFloat()) * 100
             requireActivity().runOnUiThread {
                 val caloriesProgressBar =
                     view?.findViewById<CircularProgressIndicator>(R.id.calories_progress)
@@ -124,9 +124,9 @@ class HomeFragment : Fragment() {
             sugarReachedTextView.text = "$sugarConsumed of $maxSugar g"
 
             // Calculate the progress values for each nutrient
-            val carbsProgress = (carbsConsumed.toFloat() / maxCarbs.toFloat()) * 100
-            val proteinProgress = (proteinConsumed.toFloat() / maxProtein.toFloat()) * 100
-            val sugarProgress = (sugarConsumed.toFloat() / maxSugar.toFloat()) * 100
+            val carbsProgress = (carbsConsumed / maxCarbs.toFloat()) * 100
+            val proteinProgress = (proteinConsumed / maxProtein.toFloat()) * 100
+            val sugarProgress = (sugarConsumed / maxSugar.toFloat()) * 100
 
             // Set the progress values in the progress bars
             requireActivity().runOnUiThread {
