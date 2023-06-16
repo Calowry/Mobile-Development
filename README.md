@@ -10,7 +10,7 @@ Calowry is a food tracking app with machine learning to distinguish between diff
   * Screen resolution: 1280 x 800 (Full HD 1920 x 1080 recommended).
 
 # Installation
-1. Clone this repository, run git clone https://github.com/Calowry/Mobile-Development
+1. Clone this repository, run git clone https://github.com/Calowry/Mobile-Development.git .
 2. Open in Android Studio
 3. Connect your device into Android Studio. [Documentation](https://developer.android.com/codelabs/basic-android-kotlin-compose-connect-device)
 4. Run your Android Studio. [Documentation](https://developer.android.com/training/basics/firstapp)
