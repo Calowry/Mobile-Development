@@ -28,6 +28,7 @@ class SessionManager(context: Context) {
         editor.clear().apply()
     }
 
+
     val getLimit = prefs.getInt("KEY_LIMIT", 30)
     val getToken = prefs.getString(KEY_TOKEN, "")
     val getUserId = prefs.getString(KEY_USER_ID, "")
