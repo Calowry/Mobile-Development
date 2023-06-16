@@ -6,6 +6,25 @@
     android:layout_height="match_parent"
     tools:context=".ui.login.LoginActivity">
 
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="6dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <View
+        android:id="@+id/bg_dim"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#74000000"
+        android:elevation="4dp"
+        android:visibility="gone" />
+
     <TextView
         android:id="@+id/register_message"
         android:layout_width="350dp"

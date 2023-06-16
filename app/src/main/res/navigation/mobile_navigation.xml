@@ -28,4 +28,5 @@
         android:name="com.project.calowry_app.ui.profile.ProfileFragment"
         android:label="@string/profile"
         tools:layout="@layout/fragment_profile"/>
+
 </navigation>

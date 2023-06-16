@@ -1,14 +1,19 @@
 package com.project.calowry_app.ui
 
+import android.content.Context
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.setupWithNavController
 import com.google.android.material.bottomnavigation.BottomNavigationView
+import com.google.android.material.floatingactionbutton.FloatingActionButton
 import com.project.calowry_app.R
 import com.project.calowry_app.databinding.ActivityMainBinding
+import com.project.calowry_app.ui.camera.CameraActivity
 
-class MainActivity : AppCompatActivity() {
+class MainActivity : AppCompatActivity(), View.OnClickListener {
 
     private lateinit var binding: ActivityMainBinding
 
@@ -20,6 +25,9 @@ class MainActivity : AppCompatActivity() {
 
         initUI()
 
+        val loginBtn: FloatingActionButton = findViewById(R.id.fab)
+        loginBtn.setOnClickListener(this)
+
     }
 
     private fun initUI() {
@@ -29,5 +37,22 @@ class MainActivity : AppCompatActivity() {
         val navController = navHostFragment.navController
         navView.setupWithNavController(navController)
 
+    }
+
+    override fun onClick(v: View?) {
+        when (v?.id) {
+            R.id.fab -> {
+                val intent = Intent(this, CameraActivity::class.java)
+                startActivity(intent)
+            }
+        }
+    }
+
+    companion object {
+
+        fun start(context: Context) {
+            val intent = Intent(context, MainActivity::class.java)
+            context.startActivity(intent)
+        }
     }
 }
